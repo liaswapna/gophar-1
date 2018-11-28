@@ -1,110 +1,106 @@
 .logo-div {
-    color: black;
-    font-family: 'Lobster', cursive;
-    font-size: 40px;
-    display: flex;
-    align-items: center
+  color: black;
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  display: flex;
+  align-items: center
 }
 
 .logo-image {
-    height: auto;
-    width: 75px;
-    padding-left: 10px;
+  height: auto;
+  width: 75px;
+  padding-left: 10px;
 }
 
 .logo-background {
-    width: 500px;
-    height: 100px;
+  width: 500px;
+  height: 100px;
 }
 
 .main-body {
-    background-image: url("../images/mountain-scenic.jpg");
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+  background-image: url("../images/mountain-scenic.jpg");
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 .map {
-    border-right: solid;
-    border-left: solid;
-    border-bottom: solid;
-    border-top: solid;
-    border-color: grey;
-    height: 500px;
-    margin-left: 64px;
-    background-color: grey;
-    opacity: .7;
-    color: white;
-    text-align: center;
+  border-right: solid;
+  border-left: solid;
+  border-bottom: solid;
+  border-top: solid;
+  border-color: grey;
+  height: 500px;
+  margin-left: 64px;
+  color: white;
+  text-align: center;
 }
 
 .right-of-map {
-    border-right: solid;
-    border-left: solid;
-    border-bottom: solid;
-    border-top: solid;
-    border-color: white;
-    height: 500px;
-    background-color: grey;
-    /* opacity: .8; */
-    color: white;
-    text-align: center;
-    overflow-y: scroll;
+  border-right: solid;
+  border-left: solid;
+  border-bottom: solid;
+  border-top: solid;
+  border-color: white;
+  height: 500px;
+  background-color: grey;
+  /* opacity: .8; */
+  color: white;
+  text-align: center;
+  overflow-y: scroll;
 }
 
 .collection-item {
-    color: black;
-}
-
-.btn-floating {
-    color: white;
-    background-color: #7284A8;
-    width: 66px;
-    height: 61px;
+  color: black;
 }
 
 .articles-go-here {
-    border-right: solid;
-    border-left: solid;
-    border-bottom: solid;
-    border-top: solid;
-    border-color: white;
-    width: 60%;
-    height: 500px;
-    background-color: grey;
-    opacity: .8;
-    color: white;
-    text-align: center;
+  border-right: solid;
+  border-left: solid;
+  border-bottom: solid;
+  border-top: solid;
+  border-color: white;
+  width: 60%;
+  height: 500px;
+  background-color: grey;
+  opacity: .8;
+  color: white;
+  text-align: center;
 }
 
-.article-backdrop {
-    background-color: white;
-    padding-top: 20px;
-    width: flex;
+.results {
+  background-color: white;
+  padding-top: 20px;
+  width: flex;
 }
 
 .input-field-text {
-    color: whitesmoke !important;
+  color: whitesmoke !important;
 }
 
 .input-row {
-    margin-left: 193px;
+  margin-left: 193px;
 }
 
 .card-title {
-    background-color: black;
-    opacity: .6;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white !important;
+  width: 100%;
 }
 
 .search-origin-address {
-    opacity: .7;
-    background-color: black;
-    padding: 5px;
-    font-size: 20px;
+  opacity: .7;
+  background-color: black;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.pac-card {
+  background-color: white;
 }

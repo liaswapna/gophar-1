@@ -15,14 +15,18 @@ const geolocationRef = db.ref("/geolocation");
 let geolocationRefKeys = 0;
 
 const mapDisplay = document.querySelector(".map");
-const originInputField = document.querySelector("#autocomplete-input-a");
-const destinationInputField = document.querySelector("#autocomplete-input-b");
-const searchButton = document.querySelector(".go-button > a");
-const resultsDisplay = document.querySelector(".article-backdrop");
+const originInputField = document.querySelector("#origin");
+const destinationInputField = document.querySelector("#destination");
+const searchButton = document.querySelector(".search");
+const resultsDisplay = document.querySelector(".results");
+const restaurant = document.querySelector("#changetype-restaurant");
+const lodging = document.querySelector("#changetype-lodging");
+const weather = document.querySelector("#changetype-weather");
 
 let map;
 let geocoder;
 let service;
+let category = "restaurant";
 
 let origin = {
   name: "",
@@ -40,6 +44,12 @@ let midpoint = {
   lat: "",
   lng: ""
 };
+
+restaurant.addEventListener("click", () => category = "restaurant");
+lodging.addEventListener("click", () => category = "lodging");
+weather.addEventListener("click", () => {
+  // Lia's Code
+});
 
 
 function addGeolocation(location, name, lat, lng) {
@@ -76,7 +86,7 @@ function findPlaces() {
   service.nearbySearch({
     location: midpoint,
     radius: 50000,
-    type: ['point_of_interest']
+    type: [category]
   }, populatePlaces);
 }
 
