@@ -1,21 +1,24 @@
 .logo-div {
   color: black;
   font-family: 'Lobster', cursive;
-  font-size: 40px;
+  font-size: 94px;
   display: flex;
-  align-items: center
+  align-items: center;
+  margin-left: -232px;
+  background-color: white;
+  width: 415px;
+  height: 128px;
+  padding-left: 15px;
+  padding-top: -4px;
 }
 
 .logo-image {
   height: auto;
-  width: 75px;
+  width: 128px;
   padding-left: 10px;
 }
 
-.logo-background {
-  width: 500px;
-  height: 100px;
-}
+
 
 .main-body {
   background-image: url("../images/mountain-scenic.jpg");
@@ -49,8 +52,7 @@
   border-top: solid;
   border-color: white;
   height: 500px;
-  background-color: grey;
-  /* opacity: .8; */
+  background-color:black;
   color: white;
   text-align: center;
   overflow-y: scroll;
@@ -80,27 +82,51 @@
   width: flex;
 }
 
-.input-field-text {
-  color: whitesmoke !important;
-}
 
 .input-row {
-  margin-left: 193px;
+  margin-left: -1px;
+  background-color: white;
+  width: 1000px;
+  height: 90px;
+  text-align: center;
+  padding-left: 33px;
+}
+
+#distance-display{
+  background-color: #3E5641;
+  color:white;
 }
 
 .card-title {
   background-color: rgba(0, 0, 0, 0.3);
-  color: white !important;
+  color: white;
   width: 100%;
 }
 
 .search-origin-address {
-  opacity: .7;
-  background-color: black;
   padding: 5px;
-  font-size: 20px;
+  font-size: 30px;
+  color:red;
+  opacity: .8;
 }
 
 .pac-card {
-  background-color: white;
+  background-color:#3E5641;
+  color:white;
+  text-align:left;
+  padding-left:20px;
+  padding-bottom:10px;
+}
+
+.collection-item:first-child,
+.collection-item:last-child{
+    background-color:#646F58;
+    color: white;
+}
+.pac-controls{
+  padding-bottom: 10px;
+  color:white !important;
+}
+#type-selector{
+    color:white;
 }
