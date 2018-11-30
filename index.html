@@ -21,12 +21,15 @@
 </head>
 
 <body class="main-body valign-wrapper">
+
+  <!-- Heading container -->
   <div class="container">
     <div class="section logo-div">
       <p>Gophar</p><img src="assets/images/Gopherface.PNG" class="logo-image" alt="Gophar Logo">
     </div>
   </div>
 
+<!-- Form container -->
   <div class="container">
     <div class="row">
       <div class="section">
@@ -53,6 +56,15 @@
     </div>
   </div>
 
+<!-- Distance display container -->
+  <div class="container">
+    <div class="row">
+      <div class="col s12" id="distance-display">
+      </div>
+    </div>
+  </div>
+
+<!-- Options container -->
   <div class="container">
     <div class="row">
       <div class="col s12 pac-card" id="pac-card">
@@ -70,9 +82,19 @@
             <input name="type" type="radio" id="changetype-weather">
             <span>Weather</span>
           </label>
+          <label for="changetype-alert">
+            <input name="type" type="radio" id="changetype-alert">
+            <span>Earthquake prone Region</span>
+          </label>
+          <label for="changetype-currentLocation">
+            <input name="type" type="radio" id="changetype-currentLocation">
+            <span>My Location</span>
+          </label>
         </div>
       </div>
     </div>
+
+    <!-- Map container -->
     <div class="row">
       <div class="col s8 map"></div>
 
@@ -119,15 +141,15 @@
     </div>
   </div>
 
+  <!-- Display lodge,restaurant container -->
   <div class="container results"></div>
 
   <!-- JavaScript -->
-  <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- Maps -->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=API_KEY"></script>
-  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script> -->
   <!-- My JS -->
   <script src="assets/javascript/app.js"></script>
 </body>
