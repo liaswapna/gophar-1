@@ -34,16 +34,16 @@
     <div class="row">
       <div class="section">
         <div class="input-row">
-          <div class="input-field col s4">
+          <div class="input-field col s6">
             <i class="material-icons prefix">A</i>
             <input type="text" id="origin" class="autocomplete">
-            <label class="search-origin-address white-text text-darken-2" for="origin">Origin</label>
+            <label class="search-origin-address white-text text-darken-2" for="origin"></label>
           </div>
 
-          <div class="input-field col s4">
+          <div class="input-field col s6">
             <i class="material-icons prefix">B</i>
             <input type="text" id="destination" class="autocomplete">
-            <label class="search-origin-address white-text text-darken-2" for="destination">Destination</label>
+            <label class="search-origin-address white-text text-darken-2" for="destination"></label>
           </div>
 
           <div class="search col">
@@ -74,9 +74,25 @@
             <input name="type" type="radio" id="changetype-restaurant">
             <span>Restaurants</span>
           </label>
+          <label for="changetype-supermarket">
+            <input name="type" type="radio" id="changetype-supermarket">
+            <span>Supermarket</span>
+          </label>
+          <label for="changetype-gas">
+            <input name="type" type="radio" id="changetype-gas">
+            <span>Gas Stations</span>
+          </label>
           <label for="changetype-lodging">
             <input name="type" type="radio" id="changetype-lodging">
             <span>Lodging</span>
+          </label>
+          <label for="changetype-campground">
+          <input name="type" type="radio" id="changetype-campground">
+            <span>Campground</span>
+          </label>
+          <label for="changetype-bar">
+            <input name="type" type="radio" id="changetype-bar">
+            <span>Bar</span>
           </label>
           <label for="changetype-weather">
             <input name="type" type="radio" id="changetype-weather">
@@ -99,43 +115,8 @@
       <div class="col s8 map"></div>
 
       <div class="col s4 right-of-map">
+          <h5>Trip Itinerary</h5>
         <ul class="collection with-header">
-          <li class="collection-header black">
-            <h5>Enhance Your Trip!</h5>
-          </li>
-          <li class="collection-item">
-            <div>Option 1<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 2<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 3<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 4<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 5<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 6<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 7<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 8<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 9<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 10<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Option 11<a href="#!" class="secondary-content"><i class="material-icons blue-text text-darken-4">directions_car</i></a></div>
-          </li>
         </ul>
       </div>
     </div>
@@ -145,11 +126,10 @@
   <div class="container results"></div>
 
   <!-- JavaScript -->
-  <!-- <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- Maps -->
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=API_KEY"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places,geometry&key=AIzaSyCBChyt-a86qw-nPNcqk_23oaduseO4UIo"></script>
   <!-- My JS -->
   <script src="assets/javascript/app.js"></script>
 </body>
