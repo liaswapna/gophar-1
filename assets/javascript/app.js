@@ -92,6 +92,7 @@ function populatePlaces(results, status) {
     });
   }
 }
+
 function createRow() {
   const row = document.createElement("div");
   row.classList.add("row");
@@ -146,6 +147,7 @@ function createCol(row, place) {
   cardP.appendChild(cardPText);
   cardContent.appendChild(cardP);
 }  
+
 function addMarker(lat, lng) {
   const marker = new google.maps.Marker({
     map: map,
@@ -161,13 +163,9 @@ function addMarker(lat, lng) {
 */ 
 // Search button click event.
 $(".search").on("click",function(event){
-  // origin = $("#origin").val().trim();
-  // destination = $("#destination").val().trim();
-  origin = "sacramento";
-  destination = "san diego";
+  origin = $("#origin").val().trim();
+  destination = $("#destination").val().trim();
   if(origin !== "" && destination !== ""){
-      $(".checkButton").css("display","block");
-
       let geocoder = new google.maps.Geocoder();
       geocoder.geocode( { 'address': origin}, function(results, status) {
       if (status == 'OK') {
@@ -179,8 +177,8 @@ $(".search").on("click",function(event){
       });
       
       // Clear the input field.
-      $("#origin-input").val("");
-      $("#destination-input").val("");
+      $("#origin").val("");
+      $("#destination").val("");
   }
 });
 
@@ -206,6 +204,7 @@ $("#changetype-lodging").on("click",function(){
   }, populatePlaces);
 });
 
+//  Weather click event.
 $("#changetype-weather").on("click",function(){
   var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${destination}&units=metric&APPID=1b2d7a96da1bf2ad8de91946503ece25`;
   $.ajax({
@@ -213,8 +212,6 @@ $("#changetype-weather").on("click",function(){
   method: "GET"
   }).then(function(response){               
 
-    // let weatherLat = parseFloat(response.coord.lat);
-    // let weatherLng = parseFloat(response.coord.lon);
     let weatherLatLng = {lat:destinationObject.lat,lng:destinationObject.lng};
     let imageUrl = "http://openweathermap.org/img/w/" + response.weather[0].icon +".png";
     let tempC = response.name+"\n"+String(Math.floor(response.main.temp))+ "\xBA C";       
@@ -235,6 +232,7 @@ $("#changetype-weather").on("click",function(){
   });
 });
 
+// click event to alert about the eartthquake prone area 
 $("#changetype-alert").on("click",function(){
 
   initMap(midLocationObject.lat,midLocationObject.lng,5);
@@ -266,6 +264,7 @@ $("#changetype-alert").on("click",function(){
   calcRoute();
 });
 
+// Click event to get the current location of the user.
 $("#changetype-currentLocation").on("click",function(){
   initMap(47.008,-122.000,6);
   infoWindow = new google.maps.InfoWindow;
